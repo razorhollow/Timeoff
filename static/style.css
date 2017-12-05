@@ -1,0 +1,28 @@
+body {
+
+}
+
+nav {
+	height: 30px;
+	width: 100%;
+	background-color: #006D95;
+	position: relative;
+	top: -40px;
+}
+
+.button-section {
+	display: inline-flex;
+}
+
+.button {
+	
+	background-color: #50C7F4
+	height: 512px;
+	width: 512px;
+	color: white;
+}
+
+#logo {
+	height: 150px;
+	width: auto;
+}
