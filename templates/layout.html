@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %} - Employee Intranet</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+	<div class="header">
+		<a href="./"><img src="/static/RMI-Logo.png" id="logo"></a>
+		<h1>{% block pageheading %}{% endblock %}</h1>
+		
+	</div>
+	<nav>
+	</nav>
+	<div id="content">
+		{% block content %}
+		{% endblock %}
+	</div>
+	<div id="footer">
+		{% block footer %}&copy; Copyright 2017 by <a href="http://www.reynoldsman.com">Reynolds Manufacturing, Inc.</a>{% endblock %}
+    </div>
+</body>
+</html>
+	

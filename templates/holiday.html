@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block pageheading %}Welcome to the RMI Employee Portal{% endblock %}
+{% block content %}
+	<h1>This Year's Holiday Calendar</h1>
+	<table>
+	{% for holday in query %}
+		{% if holday.holidayDate.year == thisYear %}
+		<tr>
+			<td>{{ holday.description}}</td>
+			<td>{{ "{}/{}/{}".format(holday.holidayDate.month, holday.holidayDate.day, holday.holidayDate.year) }}</td>
+		</tr>
+		{% endif %}
+	{% endfor %}
+	</table>
+{% endblock %}
