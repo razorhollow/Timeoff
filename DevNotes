@@ -1,0 +1,13 @@
+#TODO: Create a function that runs on friday, looks for vacation taken for the week, and sends a summary email for payroll
+#TODO: Create login page and functionality
+#TODO: Create admin page
+  *Add Holiday days
+  *View everyone's vacation days remaining
+  *generate chart of all vacation days +- 7 days
+#TODO: Figure out jinja2 expanding templates
+#TODO: Generate Holiday Chart page
+#TODO: Generate Vacation page
+  *include vacation chart "taken in the last 12 months"
+  *include vacation request form
+  *include days available
+  *if not enough days, warning message
